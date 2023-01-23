@@ -48,7 +48,7 @@ public class InvoiceFilterTest {
     @Test
     public void filterInvoicesBefore1999() {
         Calendar oldDate = Calendar.getInstance();
-        oldDate.set(1995, 5, 22);
+        oldDate.set(1995, Calendar.MAY, 22);
 
         Invoice inv1 = new Invoice(oldDate, "YM", 5000);
         Invoice inv2 = new Invoice(Calendar.getInstance(), "YM", 200);
